@@ -3,17 +3,17 @@
 factorial() {
     local num=$1
     local result=1
+    local i=1
 
-    for ((i = 1; i <= num; i++)); do
+    while [[ $i -le $num ]]; do
         result=$((result * i))
+        ((i++))
     done
 
     echo $result
 }
 
-
 read -p "Enter a number: " number
-
 
 if [[ $number -lt 0 ]]; then
     echo "Factorial is not defined for negative numbers."
