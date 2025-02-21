@@ -1,22 +1,18 @@
 #!/bin/bash
-sum_of_numbers() {
-    local n=$1
-    local sum=0
-    local i=1
-
-    while [[ $i -le $n ]]; do
-        sum=$((sum + i))
-        ((i++))
-    done
-
-    echo $sum
-}
 
 read -p "Enter a number: " n
 
-if [[ $n -le 0 ]]; then
+while [[ $n -le 0 ]]; do
     echo "Please enter a positive number."
-else
-    result=$(sum_of_numbers $n)
-    echo "Sum of first $n numbers is: $result"
-fi
+    read -p "Enter a number: " n
+done
+
+sum=0
+i=1
+
+while [[ $i -le $n ]]; do
+    sum=$((sum + i))
+    ((i++))
+done
+
+echo "Sum of first $n numbers is: $sum"
