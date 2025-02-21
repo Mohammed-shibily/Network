@@ -2,9 +2,11 @@
 sum_of_numbers() {
     local n=$1
     local sum=0
+    local i=1
 
-    for ((i = 1; i <= n; i++)); do
+    while [[ $i -le $n ]]; do
         sum=$((sum + i))
+        ((i++))
     done
 
     echo $sum
