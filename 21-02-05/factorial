@@ -1,23 +1,13 @@
-#!/bin/bash
+echo "Enter a number:"
+read num
 
-factorial() {
-    local num=$1
-    local result=1
-    local i=1
+fact=1
+i=1
 
-    while [[ $i -le $num ]]; do
-        result=$((result * i))
-        ((i++))
-    done
 
-    echo $result
-}
-
-read -p "Enter a number: " number
-
-if [[ $number -lt 0 ]]; then
-    echo "Factorial is not defined for negative numbers."
-else
-    result=$(factorial $number)
-    echo "Factorial of $number is: $result"
-fi
+while [ $i -le $num ]
+do
+  fact=$((fact * i))
+  i=$((i + 1))
+done
+echo "The factorial of $num is $fact"
