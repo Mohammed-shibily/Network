@@ -1,0 +1,8 @@
+[mca@localhost ~]$ echo "Current Working Directory: $current_dir"
+Current Working Directory: /home/mca
+[mca@localhost ~]$ echo "Username: $username"
+Username: mca
+[mca@localhost ~]$ echo "Current Date and Time: $current_date_time"
+Current Date and Time: Thu Mar  6 10:30:09 AM IST 2025
+[mca@localhost ~]$ 
+
