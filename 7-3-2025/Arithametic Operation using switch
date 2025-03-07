@@ -1,0 +1,56 @@
+echo "Choose an operation:"
+echo "1. Add"
+echo "2. Subtract"
+echo "3. Multiply"
+echo "4. Divide"
+
+
+read -p "Enter your choice (1-4): " choice
+
+
+read -p "Enter first number: " num1
+read -p "Enter second number: " num2
+
+
+case $choice in
+    1)
+        result=$((num1 + num2))
+        echo "Result: $num1 + $num2 = $result"
+        ;;
+    2)
+        result=$((num1 - num2))
+        echo "Result: $num1 - $num2 = $result"
+        ;;
+    3)
+        result=$((num1 * num2))
+        echo "Result: $num1 * $num2 = $result"
+        ;;
+    4)
+        if [ $num2 -eq 0 ]; then
+            echo "Error: Division by zero is not allowed."
+        else
+            result=$((num1 / num2))
+            echo "Result: $num1 / $num2 = $result"
+        fi
+        ;;
+    *)
+        echo "Invalid choice"
+        ;;
+esac
+
+
+OUTPT:-
+[mca@localhost ~]$ vi week1.sh
+[mca@localhost ~]$ ./week1.sh
+Choose an operation:
+1. Add
+2. Subtract
+3. Multiply
+4. Divide
+Enter your choice (1-4): 2
+Enter first number: 4
+Enter second number: 8
+Result: 4 - 8 = -4
+[mca@localhost ~]$ vi week1.sh
+
+
