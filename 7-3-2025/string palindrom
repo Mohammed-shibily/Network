@@ -9,15 +9,6 @@ if [ "$str" == "$rev_str" ]; then
 else
     echo "Not a palindrome"
 fi
-OUTPUT:-
-[mca@localhost ~]$ ./week1.sh
-Enter a string: gayathri
-Not a palindrome
-[mca@localhost ~]$ ./week1.sh
-Enter a string: amma
-Palindrome
-[mca@localhost ~]$ vi week1.sh
-[mca@localhost ~]$ 
 
 
 
