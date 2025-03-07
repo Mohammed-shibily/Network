@@ -11,12 +11,3 @@ read radius
 
 calculate_area $radius
 
-OUTPU:-
-
-[mca@localhost ~]$ vi week1.sh
-[mca@localhost ~]$ ./week1.sh
-Enter the radius of the circle:
-3
-Area of the circle with radius 3 is: 28.27431
-[mca@localhost ~]$ vi week1.sh
-[mca@localhost ~]$ 
