@@ -39,18 +39,4 @@ case $choice in
 esac
 
 
-OUTPT:-
-[mca@localhost ~]$ vi week1.sh
-[mca@localhost ~]$ ./week1.sh
-Choose an operation:
-1. Add
-2. Subtract
-3. Multiply
-4. Divide
-Enter your choice (1-4): 2
-Enter first number: 4
-Enter second number: 8
-Result: 4 - 8 = -4
-[mca@localhost ~]$ vi week1.sh
-
 
