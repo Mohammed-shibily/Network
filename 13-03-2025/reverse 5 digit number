@@ -1,0 +1,14 @@
+echo "Enter a 5-digit number:"
+read num
+
+
+if [[ ! "$num" =~ ^[0-9]{5}$ ]]; then
+    echo "Error: Please enter a valid 5-digit number."
+    exit 1
+fi
+
+
+reversed_num=$(echo "$num" | rev)
+
+
+echo "The reverse of $num is: $reversed_num"
